@@ -18,7 +18,7 @@ to start executing its critical section. The function call is blocking and retur
         - reliable socket connections, implemented using either TCP or SCTP, between every pair of nodes, and all messages are exchanged over these connections. All connections are established in the beginning and stay intact until the program ends.
         - Each node randomly waits for a period of time that is exponentially probability distributed before generating a request
 
-## Algorithm Implementation: 
+## Service Implementation: 
 
     Each node consists of two separate modules:
         - Top module implements the application (requests and executes critical sections)
