@@ -1,4 +1,4 @@
-Roucairol and Carvalho’s distributed mutual exclusion algorithm
+## Roucairol and Carvalho’s distributed mutual exclusion algorithm
 
 - Gaurantees one process at critical section at a time
 
