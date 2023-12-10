@@ -1,18 +1,17 @@
-## Getting Started
+Roucairol and Carvalho’s distributed mutual exclusion algorithm
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Gaurantees one process at critical section at a time
 
-## Folder Structure
+To run the program:
+    - Run launcher.sh with config file
+    - After program ends, run TestModule.py to ensure correctness.
+        - Ensures no two processes over lap in critical section and all happen separately
+        - example command input: python3 Testmodule.py n
+        - n is the number of machines
+    - run cleanup.sh to kill all processes
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+To view graphs:
+    - run experiment.py
+        - example command input: python3 experiment.py n
+        - graphs for message complexity, response time, and system throughput
+    
